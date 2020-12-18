@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InputDataForSearch" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,1588" sap2010:WorkflowViewState.IdRef="InputDataForSearch_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InputDataForSearch" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="978.4,2024.8" sap2010:WorkflowViewState.IdRef="InputDataForSearch_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
       <x:String>System.Activities</x:String>
@@ -63,6 +63,16 @@
         <OutArgument x:TypeArguments="x:String">[Job]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog for the Domain" sap:VirtualizedContainerService.HintSize="568.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Numește domeniul de activitate" Title="Numește domeniul de activitate">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Domeniu]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog for the City" sap:VirtualizedContainerService.HintSize="568.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Numește orașul" Title="Numește orașul">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Oras]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="568.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Job]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48b8afc8-715e-4b9e-832c-6757293628fe" InformativeScreenshot="67e204fe41ee73c88ebae7a27df407d8" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='searchinput' tag='INPUT' type='text' /&gt;">
@@ -75,11 +85,6 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog for the Domain" sap:VirtualizedContainerService.HintSize="568.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Numește domeniul de activitate" Title="Numește domeniul de activitate">
-      <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">[Domeniu]</OutArgument>
-      </ui:InputDialog.Result>
-    </ui:InputDialog>
     <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the domain  from dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Domeniu]">
       <ui:SelectItem.Items>
         <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -134,11 +139,6 @@
         </ui:Target>
       </ui:SelectItem.Target>
     </ui:SelectItem>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog for the City" sap:VirtualizedContainerService.HintSize="568.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Numește orașul" Title="Numește orașul">
-      <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">[Oras]</OutArgument>
-      </ui:InputDialog.Result>
-    </ui:InputDialog>
     <If Condition="[Oras.ToLower.Equals(&quot;bucuresti&quot;)]" sap:VirtualizedContainerService.HintSize="568.8,209.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">

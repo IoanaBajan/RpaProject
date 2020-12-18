@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Logging" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,1250.4" sap2010:WorkflowViewState.IdRef="Logging_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Logging" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="978.4,1612.8" sap2010:WorkflowViewState.IdRef="Logging_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
       <x:String>System.Activities</x:String>
@@ -26,7 +26,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -43,9 +43,10 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Logging" sap:VirtualizedContainerService.HintSize="375.2,1206.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Logging" sap:VirtualizedContainerService.HintSize="375.2,1408" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Parola" />
       <Variable x:TypeArguments="x:String" Name="Email" />
@@ -65,8 +66,8 @@
         <OutArgument x:TypeArguments="x:String">[Parola]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'chrome.exe Peste'" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="Hover_1">
-      <ui:Hover.CursorPosition>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://www.hipo.ro/...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
             <InArgument x:TypeArguments="x:Int32" />
@@ -75,9 +76,9 @@
             <InArgument x:TypeArguments="x:Int32" />
           </ui:CursorPosition.OffsetY>
         </ui:CursorPosition>
-      </ui:Hover.CursorPosition>
-      <ui:Hover.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea05a9d6-f162-47a1-a4ea-6c7e767de4b9" InformativeScreenshot="e5e882d505419fc0541822786532604d" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Intra in cont &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;CANDIDAT &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='A' /&gt;">
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a22a5ae6-7e1f-4466-a499-a4e57430174c" InformativeScreenshot="39c517d0d516db04a629c9f523d88e47" Selector="&lt;html app='chrome.exe' title='Peste 5000 de Locuri de munca si Joburi pentru profesionisti, programe de internship pentru studenti si absolventi, targul de cariera Angajatori de TOP.' /&gt;&lt;webctrl aaname='MyHipo' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -85,17 +86,11 @@
             <InArgument x:TypeArguments="ui:WaitForReady" />
           </ui:Target.WaitForReady>
         </ui:Target>
-      </ui:Hover.Target>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:Hover>
+      </ui:Click.Target>
+    </ui:Click>
     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'email'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Email]">
       <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="be98240e440f4cd11a509779cc609a71" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl tag='INPUT' type='email' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="be98240e440f4cd11a509779cc609a71" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl parentid='boxlogin-left' tag='INPUT' type='email' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -107,7 +102,7 @@
     </ui:TypeInto>
     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'parola'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Parola]">
       <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="23526233144ce4e7ebd316a369ce0ed5" Selector="&lt;html app='chrome.exe' title='Peste 5000 de Locuri de munca si Joburi pentru profesionisti, programe de internship pentru studenti si absolventi, targul de cariera Angajatori de TOP.' /&gt;&lt;webctrl id='parolalogin' tag='INPUT' type='password' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="23526233144ce4e7ebd316a369ce0ed5" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl parentid='boxlogin-left' tag='INPUT' type='password' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -135,7 +130,29 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb5ef2cb-3444-49e2-847c-b9c4c431db62" InformativeScreenshot="4a88eb2ee27d8379c7734a3514943a44" Selector="&lt;html app='chrome.exe' title='Peste 5000 de Locuri de munca si Joburi pentru profesionisti, programe de internship pentru studenti si absolventi, targul de cariera Angajatori de TOP.' /&gt;&lt;webctrl parentid='login-candidat' tag='INPUT' type='submit' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb5ef2cb-3444-49e2-847c-b9c4c431db62" InformativeScreenshot="4a88eb2ee27d8379c7734a3514943a44" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl tag='BUTTON' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://www.hipo.ro/...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38fd71dc-2741-4c06-855a-808fc71fb0b5" InformativeScreenshot="3f566b2f64e128cc353ad81c4b7524ef" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl aaname='Cauta Job' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
