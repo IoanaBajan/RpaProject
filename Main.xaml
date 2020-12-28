@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="922.4,1113.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,1113.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
       <x:String>System.Activities</x:String>
@@ -64,9 +64,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="424.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReadExcelData.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="sd:DataTable" x:Key="InfoData">
-          <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="Data" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="InfoData">[Data]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="424.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="OpenBrowser.xaml">
@@ -91,31 +89,17 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Logging.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="Email">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(&quot;Email&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="Password">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(&quot;Parola&quot;).ToString" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Email">[row("Email").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Password">[row("Parola").ToString]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="InputDataForSearch.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="Job">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(&quot;Job&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="Domeniu">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(&quot;Domeniu&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="Oras">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="row(&quot;Oras&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="s:String[]" x:Key="Experience">
-                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="Split(row(&quot;Experience&quot;).ToString, &quot;,&quot;)" />
-                </InArgument>
-                <InArgument x:TypeArguments="s:String[]" x:Key="JobType">
-                  <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="Split(row(&quot;Job Type&quot;).ToString, &quot;,&quot;)" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Job">[row("Job").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Domeniu">[row("Domeniu").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Oras">[row("Oras").ToString]</InArgument>
+                <InArgument x:TypeArguments="s:String[]" x:Key="Experience">[Split(row("Experience").ToString, ",")]</InArgument>
+                <InArgument x:TypeArguments="s:String[]" x:Key="JobType">[Split(row("Job Type").ToString, ",")]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>

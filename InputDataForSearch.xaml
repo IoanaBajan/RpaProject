@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>814.4,1327.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1104,1340</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InputDataForSearch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -70,78 +70,118 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="610.4,975.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="610.4,1526.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="568.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Job]">
-      <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48b8afc8-715e-4b9e-832c-6757293628fe" InformativeScreenshot="67e204fe41ee73c88ebae7a27df407d8" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='searchinput' tag='INPUT' type='text' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:TypeInto.Target>
-    </ui:TypeInto>
-    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the domain  from dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Domeniu]">
-      <ui:SelectItem.Items>
-        <scg:List x:TypeArguments="x:String" Capacity="64">
-          <x:String>Toate Domeniile</x:String>
-          <x:String>Achizitii-Logistica-Aprovizionare</x:String>
-          <x:String>Administratie-Stiinte-politice</x:String>
-          <x:String>Agricultura</x:String>
-          <x:String>Altele</x:String>
-          <x:String>Arhitectura-Design-Proiectare</x:String>
-          <x:String>Asigurari-Intermedieri-financiare</x:String>
-          <x:String>Banci</x:String>
-          <x:String>Chimie-Petrochimie</x:String>
-          <x:String>Constructii</x:String>
-          <x:String>Contabilitate-Finante</x:String>
-          <x:String>Controlul-calitatii</x:String>
-          <x:String>Customer-support-Client-service</x:String>
-          <x:String>Educatie-Training</x:String>
-          <x:String>Farmacie-Medicina</x:String>
-          <x:String>Fundatii-Voluntariat-ONG</x:String>
-          <x:String>Imobiliare-Real-Estate</x:String>
-          <x:String>Import-Export</x:String>
-          <x:String>Inginerie</x:String>
-          <x:String>Internet-eCommerce</x:String>
-          <x:String>Internship</x:String>
-          <x:String>IT-Hardware</x:String>
-          <x:String>IT-Software</x:String>
-          <x:String>Juridic</x:String>
-          <x:String>Management-Consultanta</x:String>
-          <x:String>Management-Trainee</x:String>
-          <x:String>Marketing</x:String>
-          <x:String>Media-Jurnalism</x:String>
-          <x:String>Productie</x:String>
-          <x:String>Publicitate-Agentii-publicitate</x:String>
-          <x:String>Radio-Televiziune</x:String>
-          <x:String>Relatii-Publice</x:String>
-          <x:String>Resurse-Umane-Psihologie</x:String>
-          <x:String>Secretariat-Administrativ</x:String>
-          <x:String>Telecomunicatii</x:String>
-          <x:String>Transporturi</x:String>
-          <x:String>Turism</x:String>
-          <x:String>Vanzari</x:String>
-        </scg:List>
-      </ui:SelectItem.Items>
-      <ui:SelectItem.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="093e9394-1b63-4bec-8c13-1bd3bb42d54b" InformativeScreenshot="dd2c99d74709c0a295178fd8a8d35bc7" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='controls[select][domeniis][value]' tag='SELECT' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:SelectItem.Target>
-    </ui:SelectItem>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568.8,295.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch.Try>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Job]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48b8afc8-715e-4b9e-832c-6757293628fe" InformativeScreenshot="67e204fe41ee73c88ebae7a27df407d8" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='searchinput' tag='INPUT' type='text' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:NullReferenceException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;No job provided&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568.8,295.2" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch.Try>
+        <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the domain  from dropdown menu" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Domeniu]">
+          <ui:SelectItem.Items>
+            <scg:List x:TypeArguments="x:String" Capacity="64">
+              <x:String>Toate Domeniile</x:String>
+              <x:String>Achizitii-Logistica-Aprovizionare</x:String>
+              <x:String>Administratie-Stiinte-politice</x:String>
+              <x:String>Agricultura</x:String>
+              <x:String>Altele</x:String>
+              <x:String>Arhitectura-Design-Proiectare</x:String>
+              <x:String>Asigurari-Intermedieri-financiare</x:String>
+              <x:String>Banci</x:String>
+              <x:String>Chimie-Petrochimie</x:String>
+              <x:String>Constructii</x:String>
+              <x:String>Contabilitate-Finante</x:String>
+              <x:String>Controlul-calitatii</x:String>
+              <x:String>Customer-support-Client-service</x:String>
+              <x:String>Educatie-Training</x:String>
+              <x:String>Farmacie-Medicina</x:String>
+              <x:String>Fundatii-Voluntariat-ONG</x:String>
+              <x:String>Imobiliare-Real-Estate</x:String>
+              <x:String>Import-Export</x:String>
+              <x:String>Inginerie</x:String>
+              <x:String>Internet-eCommerce</x:String>
+              <x:String>Internship</x:String>
+              <x:String>IT-Hardware</x:String>
+              <x:String>IT-Software</x:String>
+              <x:String>Juridic</x:String>
+              <x:String>Management-Consultanta</x:String>
+              <x:String>Management-Trainee</x:String>
+              <x:String>Marketing</x:String>
+              <x:String>Media-Jurnalism</x:String>
+              <x:String>Productie</x:String>
+              <x:String>Publicitate-Agentii-publicitate</x:String>
+              <x:String>Radio-Televiziune</x:String>
+              <x:String>Relatii-Publice</x:String>
+              <x:String>Resurse-Umane-Psihologie</x:String>
+              <x:String>Secretariat-Administrativ</x:String>
+              <x:String>Telecomunicatii</x:String>
+              <x:String>Transporturi</x:String>
+              <x:String>Turism</x:String>
+              <x:String>Vanzari</x:String>
+            </scg:List>
+          </ui:SelectItem.Items>
+          <ui:SelectItem.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="093e9394-1b63-4bec-8c13-1bd3bb42d54b" InformativeScreenshot="dd2c99d74709c0a295178fd8a8d35bc7" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='controls[select][domeniis][value]' tag='SELECT' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:SelectItem.Target>
+        </ui:SelectItem>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;That s not a domain&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
     <If Condition="[Oras.ToLower.Equals(&quot;bucuresti&quot;)]" sap:VirtualizedContainerService.HintSize="568.8,209.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -164,72 +204,98 @@
         </Assign>
       </If.Else>
     </If>
-    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the city from dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[Oras]">
-      <ui:SelectItem.Items>
-        <scg:List x:TypeArguments="x:String" Capacity="50">
-          <x:String>Toate Orasele</x:String>
-          <x:String>BUCURESTI</x:String>
-          <x:String>Strainatate</x:String>
-          <x:String>Timisoara</x:String>
-          <x:String>Iasi</x:String>
-          <x:String>Cluj-Napoca</x:String>
-          <x:String>Brasov</x:String>
-          <x:String>Abrud</x:String>
-          <x:String>Adjud</x:String>
-          <x:String>Afumati</x:String>
-          <x:String>Agigea</x:String>
-          <x:String>Aiud</x:String>
-          <x:String>Alba-Iulia</x:String>
-          <x:String>Alexandria</x:String>
-          <x:String>Alt-oras</x:String>
-          <x:String>Arad</x:String>
-          <x:String>Azuga</x:String>
-          <x:String>Bacau</x:String>
-          <x:String>Baia-Mare</x:String>
-          <x:String>Baicoi</x:String>
-          <x:String>Balotesti</x:String>
-          <x:String>Bals</x:String>
-          <x:String>Barlad</x:String>
-          <x:String>Beclean</x:String>
-          <x:String>Beius</x:String>
-          <x:String>Bistrita</x:String>
-          <x:String>Blaj</x:String>
-          <x:String>Boldesti-Scaieni</x:String>
-          <x:String>Botosani</x:String>
-          <x:String>Brad</x:String>
-          <x:String>Braila</x:String>
-          <x:String>Branesti</x:String>
-          <x:String>Brazi</x:String>
-          <x:String>Breaza</x:String>
-          <x:String>Buftea</x:String>
-          <x:String>Buhusi</x:String>
-          <x:String>Busteni</x:String>
-          <x:String>Buzau</x:String>
-          <x:String>Calafat</x:String>
-          <x:String>Calarasi</x:String>
-          <x:String>Campia-Turzii</x:String>
-          <x:String>Campina</x:String>
-          <x:String>Campulung-Moldovenesc</x:String>
-          <x:String>Campulung-Muscel</x:String>
-          <x:String>Capu-Codrului</x:String>
-          <x:String>Caracal</x:String>
-          <x:String>Caransebes</x:String>
-          <x:String>Carei</x:String>
-          <x:String>Cernavoda</x:String>
-          <x:String>Chisinau</x:String>
-        </scg:List>
-      </ui:SelectItem.Items>
-      <ui:SelectItem.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="093e9394-1b63-4bec-8c13-1bd3bb42d54b" InformativeScreenshot="094a4ad511d19e770bf16778495dc286" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='controls[select][orases][value]' tag='SELECT' /&gt;">
-          <ui:Target.TimeoutMS>
-            <InArgument x:TypeArguments="x:Int32" />
-          </ui:Target.TimeoutMS>
-          <ui:Target.WaitForReady>
-            <InArgument x:TypeArguments="ui:WaitForReady" />
-          </ui:Target.WaitForReady>
-        </ui:Target>
-      </ui:SelectItem.Target>
-    </ui:SelectItem>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="568.8,366.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the city from dropdown menu" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[Oras]">
+          <ui:SelectItem.Items>
+            <scg:List x:TypeArguments="x:String" Capacity="50">
+              <x:String>Toate Orasele</x:String>
+              <x:String>BUCURESTI</x:String>
+              <x:String>Strainatate</x:String>
+              <x:String>Timisoara</x:String>
+              <x:String>Iasi</x:String>
+              <x:String>Cluj-Napoca</x:String>
+              <x:String>Brasov</x:String>
+              <x:String>Abrud</x:String>
+              <x:String>Adjud</x:String>
+              <x:String>Afumati</x:String>
+              <x:String>Agigea</x:String>
+              <x:String>Aiud</x:String>
+              <x:String>Alba-Iulia</x:String>
+              <x:String>Alexandria</x:String>
+              <x:String>Alt-oras</x:String>
+              <x:String>Arad</x:String>
+              <x:String>Azuga</x:String>
+              <x:String>Bacau</x:String>
+              <x:String>Baia-Mare</x:String>
+              <x:String>Baicoi</x:String>
+              <x:String>Balotesti</x:String>
+              <x:String>Bals</x:String>
+              <x:String>Barlad</x:String>
+              <x:String>Beclean</x:String>
+              <x:String>Beius</x:String>
+              <x:String>Bistrita</x:String>
+              <x:String>Blaj</x:String>
+              <x:String>Boldesti-Scaieni</x:String>
+              <x:String>Botosani</x:String>
+              <x:String>Brad</x:String>
+              <x:String>Braila</x:String>
+              <x:String>Branesti</x:String>
+              <x:String>Brazi</x:String>
+              <x:String>Breaza</x:String>
+              <x:String>Buftea</x:String>
+              <x:String>Buhusi</x:String>
+              <x:String>Busteni</x:String>
+              <x:String>Buzau</x:String>
+              <x:String>Calafat</x:String>
+              <x:String>Calarasi</x:String>
+              <x:String>Campia-Turzii</x:String>
+              <x:String>Campina</x:String>
+              <x:String>Campulung-Moldovenesc</x:String>
+              <x:String>Campulung-Muscel</x:String>
+              <x:String>Capu-Codrului</x:String>
+              <x:String>Caracal</x:String>
+              <x:String>Caransebes</x:String>
+              <x:String>Carei</x:String>
+              <x:String>Cernavoda</x:String>
+              <x:String>Chisinau</x:String>
+            </scg:List>
+          </ui:SelectItem.Items>
+          <ui:SelectItem.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="093e9394-1b63-4bec-8c13-1bd3bb42d54b" InformativeScreenshot="094a4ad511d19e770bf16778495dc286" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='controls[select][orases][value]' tag='SELECT' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:SelectItem.Target>
+        </ui:SelectItem>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;That s not a city&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'cauta'" sap:VirtualizedContainerService.HintSize="568.8,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
