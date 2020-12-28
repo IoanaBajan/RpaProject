@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1104,1454.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>893.6,1609.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Logging_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -85,7 +85,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a22a5ae6-7e1f-4466-a499-a4e57430174c" InformativeScreenshot="39c517d0d516db04a629c9f523d88e47" Selector="&lt;html app='chrome.exe' title='Peste 5000 de Locuri de munca si Joburi pentru profesionisti, programe de internship pentru studenti si absolventi, targul de cariera Angajatori de TOP.' /&gt;&lt;webctrl aaname='MyHipo' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a22a5ae6-7e1f-4466-a499-a4e57430174c" InformativeScreenshot="39c517d0d516db04a629c9f523d88e47" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='MyHipo' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -149,7 +149,7 @@
     </ui:Click>
     <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[logginSucces]" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="011124eb-528f-4c39-9e2e-f35d4edfd815" InformativeScreenshot="f1b80b7280fdec458fc8db4b78d5d9a8" Selector="&lt;html app='chrome.exe' title='Candidati my hipo' /&gt;&lt;webctrl aaname='CONTUL MEU' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="011124eb-528f-4c39-9e2e-f35d4edfd815" InformativeScreenshot="f1b80b7280fdec458fc8db4b78d5d9a8" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='CONTUL MEU' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
