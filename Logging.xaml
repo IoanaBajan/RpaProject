@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>893.6,1609.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>875.2,1609.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Logging_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -95,7 +95,7 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'email'" sap:VirtualizedContainerService.HintSize="752.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Email]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Email' field" sap:VirtualizedContainerService.HintSize="752.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Email]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="be98240e440f4cd11a509779cc609a71" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl parentid='boxlogin-left' tag='INPUT' type='email' /&gt;">
           <ui:Target.TimeoutMS>
@@ -107,7 +107,7 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'parola'" sap:VirtualizedContainerService.HintSize="752.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Password]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Parola' field" sap:VirtualizedContainerService.HintSize="752.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Password]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fb48fe97-97b1-4139-85d7-33c311c4c3f7" InformativeScreenshot="23526233144ce4e7ebd316a369ce0ed5" Selector="&lt;html app='chrome.exe' title='Creeaza-ti CV-ul si scrisoarea de intentie in 2 minute folosind un model usor de completat.' /&gt;&lt;webctrl parentid='boxlogin-left' tag='INPUT' type='password' /&gt;">
           <ui:Target.TimeoutMS>
@@ -147,7 +147,7 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[logginSucces]" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+    <ui:UiElementExists DisplayName="Element Exists: check if the user logged in succesfully" Exists="[logginSucces]" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
       <ui:UiElementExists.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="011124eb-528f-4c39-9e2e-f35d4edfd815" InformativeScreenshot="f1b80b7280fdec458fc8db4b78d5d9a8" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='CONTUL MEU' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>

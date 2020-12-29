@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1104,665.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>875.2,665.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadExcelData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="27">
@@ -71,7 +71,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:PathExists DisplayName="Path Exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="711.2,90.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[FileName]" PathType="File">
+    <ui:PathExists DisplayName="Path Exists: check if the excel file exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="333.6,90.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[FileName]" PathType="File">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
