@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>875.2,1609.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>784,1609.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Logging_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -73,7 +73,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click  'My Hipo'" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://www.hipo.ro/...'" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -85,7 +85,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a22a5ae6-7e1f-4466-a499-a4e57430174c" InformativeScreenshot="39c517d0d516db04a629c9f523d88e47" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='MyHipo' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8b8a00e-aafc-4aee-bea1-5c3058d0b626" InformativeScreenshot="39c517d0d516db04a629c9f523d88e47" Selector="&lt;html app='chrome.exe' title='*Locuri de munca*' /&gt;&lt;webctrl aaname='MyHipo' css-selector='body&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' tag='A' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -149,7 +149,7 @@
     </ui:Click>
     <ui:UiElementExists DisplayName="Element Exists: check if the user logged in succesfully" Exists="[logginSucces]" sap:VirtualizedContainerService.HintSize="752.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="011124eb-528f-4c39-9e2e-f35d4edfd815" InformativeScreenshot="f1b80b7280fdec458fc8db4b78d5d9a8" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='CONTUL MEU' tag='SPAN' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="011124eb-528f-4c39-9e2e-f35d4edfd815" InformativeScreenshot="f1b80b7280fdec458fc8db4b78d5d9a8" Selector="&lt;html app='chrome.exe' title='Candidati my hipo' /&gt;&lt;webctrl aaname='CONTUL MEU' tag='SPAN' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

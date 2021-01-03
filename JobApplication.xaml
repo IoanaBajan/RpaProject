@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="JobApplication" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="875.2,932.8" sap2010:WorkflowViewState.IdRef="JobApplication_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="JobApplication" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824.8,932.8" sap2010:WorkflowViewState.IdRef="JobApplication_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -72,7 +72,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Locuridem Page'" sap:VirtualizedContainerService.HintSize="433.6,347.2" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="dd06a42804b057b161ae0524b30a5779" Selector="&lt;html app='chrome.exe' title='*- Hipo.ro' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Locuridem Page'" sap:VirtualizedContainerService.HintSize="433.6,347.2" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="dd06a42804b057b161ae0524b30a5779" Selector="&lt;html app='chrome.exe' title='*- Hipo.ro' /&gt;" TimeoutMS="3000">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -84,13 +84,9 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TBODY'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='JobName' attr='text' name2='JobURL' attr2='href'&gt;&lt;webctrl tag='tr'/&gt;&lt;webctrl tag='td' idx='1'/&gt;&lt;webctrl tag='a' idx='1'/&gt;&lt;webctrl tag='span' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_6" MaxNumberOfResults="0" SimulateClick="True">
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TBODY'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='JobName' attr='text' name2='JobURL' attr2='href'&gt;&lt;webctrl tag='tr'/&gt;&lt;webctrl tag='td' idx='1'/&gt;&lt;webctrl tag='a' idx='1'/&gt;&lt;webctrl tag='span' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_6" MaxNumberOfResults="0" NextLinkSelector="&lt;webctrl aaname=' ' tag='A' alt='next page' /&gt;" SimulateClick="True">
                 <ui:ExtractData.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="552c8eae-e0da-4956-b965-22b826111f30" InformativeScreenshot="621b812eb21c18f92da2d4c64023e262" Selector="&lt;webctrl tag='TBODY' /&gt;" WaitForReady="COMPLETE">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                  </ui:Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="552c8eae-e0da-4956-b965-22b826111f30" InformativeScreenshot="621b812eb21c18f92da2d4c64023e262" Selector="&lt;webctrl tag='TBODY' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
                 </ui:ExtractData.Target>
               </ui:ExtractData>
             </Sequence>
