@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1012.8,3032</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1222.4,3518.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InputDataForSearch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -71,7 +71,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="610.4,3006.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="610.4,3313.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="experienta" />
       <Variable x:TypeArguments="x:String" Name="jobT" />
@@ -81,7 +81,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch in case isn't entered a job name" sap:VirtualizedContainerService.HintSize="436.8,366.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="568.8,94.4" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// This workflow selects preferences of the user acording to the information in excel. There is a try catch for each field" />
+    <TryCatch DisplayName="Try Catch in case there isn't a job name entered" sap:VirtualizedContainerService.HintSize="568.8,366.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Job]">
           <ui:TypeInto.Target>
@@ -205,9 +206,10 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="568.8,132.8" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// On the site there's only one city, Bucuresti, written all in captial letters, the rest of them have only capital letter. This if converts each city so it can be found in the dropdown menu" />
     <If Condition="[Oras.ToLower.Equals(&quot;bucuresti&quot;)]" DisplayName="Convert the letters for name of the city entered to be found in the dropdown list" sap:VirtualizedContainerService.HintSize="568.8,209.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign DisplayName="Convert city name to upper letters" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[Oras]</OutArgument>
           </Assign.To>
@@ -217,7 +219,7 @@
         </Assign>
       </If.Then>
       <If.Else>
-        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign DisplayName="Capital letter for city name " sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[Oras]</OutArgument>
           </Assign.To>
