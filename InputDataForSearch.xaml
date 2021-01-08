@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1102.4,4276.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>989.6,3583.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InputDataForSearch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -71,7 +71,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="610.4,4072" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InputDataForSearch" sap:VirtualizedContainerService.HintSize="794.4,3556" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="experienta" />
       <Variable x:TypeArguments="x:String" Name="jobT" />
@@ -81,10 +81,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="568.8,94.4" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// This workflow selects preferences of the user acording to the information in excel. There is a try catch for each field" />
-    <TryCatch DisplayName="Try Catch in case there isn't a job name entered" sap:VirtualizedContainerService.HintSize="568.8,450.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
-      <TryCatch.Try>
-        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Job]">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="752.8,94.4" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// This workflow selects preferences of the user acording to the information in excel. There is a try catch for each field" />
+    <If Condition="[Job.Equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="752.8,364.8" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="375.2,215.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;You didn't type any job&quot;]" />
+          <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New Exception(&quot;You didn't type any job&quot;)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_8" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type the name of the job" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Job]">
           <ui:TypeInto.Target>
             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48b8afc8-715e-4b9e-832c-6757293628fe" InformativeScreenshot="67e204fe41ee73c88ebae7a27df407d8" Selector="&lt;html app='chrome.exe' title='Locuri de munca, Joburi - Hipo.ro' /&gt;&lt;webctrl id='searchinput' tag='INPUT' type='text' /&gt;" TimeoutMS="3000">
               <ui:Target.WaitForReady>
@@ -93,33 +104,9 @@
             </ui:Target>
           </ui:TypeInto.Target>
         </ui:TypeInto>
-      </TryCatch.Try>
-      <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,285.6" sap2010:WorkflowViewState.IdRef="Catch`1_5">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-            </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="375.2,215.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;No job provided&quot;]" />
-              <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New Exception(&quot;not a valid job&quot;)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_5" />
-            </Sequence>
-          </ActivityAction>
-        </Catch>
-      </TryCatch.Catches>
-    </TryCatch>
-    <TryCatch DisplayName="Try Catch in case the domain entered isn't in the dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,450.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      </If.Else>
+    </If>
+    <TryCatch DisplayName="Try Catch in case the domain entered isn't in the dropdown menu" sap:VirtualizedContainerService.HintSize="752.8,366.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
         <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select the domain  from dropdown menu" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Domeniu]">
           <ui:SelectItem.Items>
@@ -174,10 +161,10 @@
         </ui:SelectItem>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,285.6" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -221,7 +208,7 @@
         </Assign>
       </If.Else>
     </If>
-    <TryCatch DisplayName="Try Catch in case the city entered isn't in the dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,450.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch in case the city entered isn't in the dropdown menu" sap:VirtualizedContainerService.HintSize="568.8,187.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -294,10 +281,10 @@
         </ui:SelectItem>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,285.6" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -362,19 +349,19 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each experience level from excel file" sap:VirtualizedContainerService.HintSize="568.8,677.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Experience]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each experience level from excel file" sap:VirtualizedContainerService.HintSize="568.8,414.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Experience]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="experienta" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,543.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,280" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,450.4" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,187.2" sap2010:WorkflowViewState.IdRef="TryCatch_4">
               <TryCatch.Try>
                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Check the experience levels from excel" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
@@ -397,10 +384,10 @@
                 </ui:Click>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,285.6" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -469,19 +456,19 @@
         </ui:Target>
       </ui:Click.Target>
     </ui:Click>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each job type from excel file " sap:VirtualizedContainerService.HintSize="568.8,497.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[JobType]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each job type from excel file " sap:VirtualizedContainerService.HintSize="568.8,677.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[JobType]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="jobT" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,363.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,543.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,270.4" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,450.4" sap2010:WorkflowViewState.IdRef="TryCatch_5">
               <TryCatch.Try>
                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Check the job types from excel" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
@@ -504,7 +491,7 @@
                 </ui:Click>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105.6" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,285.6" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -515,7 +502,15 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New Exception(&quot;not a valid job type&quot;)]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_7" />
+                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,215.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;That's not a valid job type&quot;]" />
+                      <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New Exception(&quot;not a valid job type&quot;)]" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_7" />
+                    </Sequence>
                   </ActivityAction>
                 </Catch>
               </TryCatch.Catches>
